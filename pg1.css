@@ -1,25 +1,89 @@
+/* RESET */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* HEADER */
-header {
+/* ======================================================
+   NEW DARI MOOCH HEADER (Matches your provided screenshot)
+====================================================== */
+
+.navbar {
+    width: 100%;
     background: #997950;
-    color: white;
-    padding: 15px 30px;
+    padding: 15px 40px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-header nav a {
-    color: white;
-    margin-left: 15px;
-    text-decoration: none;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
 }
 
-/* HERO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width:100px;
+    height: 100px;
+}
+
+.logo h1 {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.nav-links a.active {
+    text-decoration: underline;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 20px;
+    width: 180px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* ======================================================
+   HERO SECTION
+====================================================== */
+
 .hero {
     text-align: center;
     padding: 80px 20px;
@@ -27,6 +91,7 @@ header nav a {
     background-size: cover;
     color: white;
 }
+
 .hero .btn {
     background: #997950;
     color: white;
@@ -36,23 +101,29 @@ header nav a {
     border-radius: 5px;
 }
 
-/* FEATURED PRODUCTS */
+/* ======================================================
+   FEATURED PRODUCTS
+====================================================== */
+
 .featured {
     text-align: center;
     padding: 40px 20px;
 }
+
 .products {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .product img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 5px;
 }
+
 .product button {
     background: #997950;
     color: white;
@@ -62,7 +133,10 @@ header nav a {
     border-radius: 5px;
 }
 
-/* FOOTER */
+/* ======================================================
+   FOOTER
+====================================================== */
+
 footer {
     background: #333;
     color: white;
