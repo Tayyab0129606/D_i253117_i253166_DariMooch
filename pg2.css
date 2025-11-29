@@ -1,0 +1,168 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background: white;
+}
+
+/* NAVBAR / HEADER */
+.navbar {
+    width: 100%;
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 55px;
+    height: auto;
+}
+
+.logo h1 {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 20px;
+    width: 180px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* LOGIN SECTION */
+.login-section {
+    background: url('images/hero_bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 40px;
+    width: 360px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.login-box h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* SOCIAL BUTTONS */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.google { background: #997950; color: white; }
+.twitter { background: #b49b78; color: black; }
+.facebook { background: black; color: white; }
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* INPUT FIELDS */
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #997950;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #997950;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background: #7f6643;
+}
+
+/* FORGOT PASSWORD */
+.forgot {
+    display: block;
+    margin-top: 12px;
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
