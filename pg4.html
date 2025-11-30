@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="pg4.css"> <!-- Page 4 CSS -->
-    <link rel="stylesheet" href="pg6.css"> <!-- Header CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beard Growth Kit - Dari Mooch</title>
+    <link rel="stylesheet" href="pg4.css">
+    <link rel="stylesheet" href="pg6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -40,9 +40,9 @@
     <div class="product-images">
         <img id="mainImg" src="images/image15.png" class="main-img" />
         <div class="thumbs">
-            <img src="images/image6.png" />
-            <img src="images/image16.png" />
-            <img src="images/image17.png" />
+            <img class="thumb" src="images/image6.png" />
+            <img class="thumb" src="images/image16.png" />
+            <img class="thumb" src="images/image17.png" />
         </div>
     </div>
 
@@ -56,8 +56,7 @@
         <div class="instock-btn">In Stock</div>
 
         <p class="desc"> 
-            Our Growth Kit contains 3 products which have been formulated with active ingredients and help in growing a healthier fuller beard. Kit includes:
-
+            Our Growth Kit contains 3 products formulated with active ingredients to help grow a healthier fuller beard. Kit includes:
         </p>
 
         <ul class="kit-list">
@@ -67,17 +66,14 @@
         </ul>
 
         <div class="qty-row">
-            <select>
-                <option>100ml</option>
-            </select>
-            <button class="qty">-</button>
-            <span class="num">1</span>
-            <button class="qty">+</button>
+            <button class="qty" id="minusBtn">-</button>
+            <span class="num" id="qtyNum">1</span>
+            <button class="qty" id="plusBtn">+</button>
         </div>
 
         <div class="cart-wishlist-row">
-            <button class="add-cart">Add to Cart</button>
-            <button class="wishlist">Add to Wishlist</button>
+            <button class="add-cart" id="addCartBtn">Add to Cart</button>
+            <button class="wishlist" id="wishlistBtn">Add to Wishlist</button>
         </div>
 
         <div class="tabs">
@@ -100,29 +96,6 @@
     </div>
 </div>
 
-<!-- REVIEWS -->
-<div class="reviews">
-    <h2>Reviews & Rating</h2>
-
-    <div class="review">
-        <div class="rev-header">
-            <strong>Hammad</strong> 
-            <span class="date">May 12, 2025</span> 
-            <span class="stars">4.9 ★</span>
-        </div>
-        <p>Good product. Suggest everyone use at least one time. You will be the fan of this product</p>
-    </div>
-
-    <div class="review">
-        <div class="rev-header">
-            <strong>Fatima</strong> 
-            <span class="date">Nov 17, 2025</span> 
-            <span class="stars">5 ★</span>
-        </div>
-        <p>My husband loved it.</p>
-    </div>
-</div>
-
 <!-- FOOTER -->
 <footer>
     <div class="footer-info">
@@ -131,6 +104,9 @@
     </div>
     <div class="footer-icons">🏠 ⚙ 🛒</div>
 </footer>
+
+<!-- LINK TO JS -->
+<script src="pg4.js"></script>
 
 </body>
 </html>
