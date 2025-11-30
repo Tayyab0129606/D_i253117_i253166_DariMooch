@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beard & Skin Quiz — Dari Mooch</title>
+  <link rel="stylesheet" href="../css/quiz.css" />
+</head>
+<body>
+  <header>
+    <h1>Beard & Skin Quiz</h1>
+    <p class="subtitle">Answer a few quick questions to discover your perfect product blend</p>
+  </header>
+
+  <main>
+    <section class="quiz-box">
+      <form id="blendQuiz">
+        <label for="length">What is your beard length?</label>
+        <select id="length" required>
+          <option value="">Select beard length</option>
+          <option value="short">Short</option>
+          <option value="medium">Medium</option>
+          <option value="long">Long</option>
+        </select>
+
+        <label for="health">How would you describe your beard health?</label>
+        <select id="health" required>
+          <option value="">Select beard health</option>
+          <option value="dry">Dry</option>
+          <option value="normal">Normal</option>
+          <option value="patchy">Patchy</option>
+        </select>
+
+        <label for="skin">Is your skin generally dry, oily, or a mix?</label>
+        <select id="skin" required>
+          <option value="">Select skin type</option>
+          <option value="dry">Dry</option>
+          <option value="oily">Oily</option>
+          <option value="combination">Combination</option>
+        </select>
+
+        <label for="style">Which product type are you most interested in?</label>
+        <select id="style" required>
+          <option value="">Select product type</option>
+          <option value="oil">Beard Oil</option>
+          <option value="balm">Beard Balm</option>
+          <option value="wash">Beard Wash</option>
+        </select>
+
+        <button type="submit">Find My Blend</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dari Mooch. All rights reserved.</p>
+  </footer>
+
+  <script src="../js/quiz.js"></script>
+</body>
+</html>
