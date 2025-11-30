@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dari Mooch - Login</title>
     <link rel="stylesheet" href="pg2.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dari Mooch - Login</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -44,10 +44,11 @@
         <button class="btn twitter">Continue with Twitter</button>
         <button class="btn facebook">Continue with Facebook</button>
 
-        <input type="email" placeholder="Email Address">
-        <input type="password" placeholder="Password">
+        <!-- Added IDs for JS -->
+        <input type="email" id="loginEmail" placeholder="Email Address">
+        <input type="password" id="loginPassword" placeholder="Password">
 
-        <button class="login-btn">Log In</button>
+        <button class="login-btn" id="loginBtn">Log In</button>
 
         <a href="#" class="forgot">Forgot Password?</a>
     </div>
@@ -57,6 +58,9 @@
 <footer>
     <p>&copy; 2025 Dari Mooch | All Rights Reserved</p>
 </footer>
+
+<!-- LINK TO JS FILE -->
+<script src="pg2.js"></script>
 
 </body>
 </html>
