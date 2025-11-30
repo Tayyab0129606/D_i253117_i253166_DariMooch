@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout — Dari Mooch</title>
+  <link rel="stylesheet" href="../css/checkout.css" />
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+  </header>
+
+  <main>
+    <!-- Billing & Shipping -->
+    <section class="checkout-section">
+      <h2>Billing & Shipping Information</h2>
+      <form id="checkoutForm">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required />
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required />
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required />
+      </form>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="checkout-section">
+      <h2>Payment Method</h2>
+      <div class="payment-options">
+        <button type="button" class="payment-btn" data-method="Credit Card">Credit Card</button>
+        <button type="button" class="payment-btn" data-method="Cash on Delivery">Cash on Delivery</button>
+        <button type="button" class="payment-btn" data-method="Bank Transfer">Bank Transfer</button>
+      </div>
+      <p id="selectedPayment">Selected: None</p>
+    </section>
+
+    <!-- Order Summary -->
+    <section class="checkout-section">
+      <h2>Order Summary</h2>
+      <ul id="orderItems">
+        <li>Beard Oil — Rs. 1200</li>
+        <li>Comb Set — Rs. 800</li>
+      </ul>
+      <p><strong>Total:</strong> Rs. 2000</p>
+      <button id="placeOrderBtn">Place Order</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dari Mooch. All rights reserved.</p>
+  </footer>
+
+  <script src="../js/checkout.js"></script>
+</body>
+</html>
