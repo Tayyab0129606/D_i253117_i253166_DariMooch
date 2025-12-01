@@ -1,4 +1,6 @@
-/* GLOBAL */
+/* ======================================================
+   GLOBAL RESET
+====================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,9 @@ body {
     background: white;
 }
 
-/* NAVBAR / HEADER */
+/* ======================================================
+   HEADER / NAVBAR (from pg6)
+====================================================== */
 .navbar {
     width: 100%;
     background: #997950;
@@ -27,17 +31,15 @@ body {
 }
 
 .logo img {
-    width: 60px;         /* smaller logo */
+    width: 55px;
     height: auto;
-    flex-shrink: 0;
 }
 
 .logo h1 {
-    font-size: 24px;      /* smaller font */
+    font-size: 24px;
     font-weight: 900;
     letter-spacing: 2px;
-    white-space: nowrap;   /* prevent wrapping */
-    color: black;          /* changed to black */
+    color: black;
 }
 
 .nav-links {
@@ -47,7 +49,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: black;          /* changed to black */
+    color: black;
     font-size: 13px;
     font-weight: 600;
 }
@@ -73,16 +75,19 @@ body {
     outline: none;
     font-size: 12px;
     margin-left: 8px;
-    color: black;          /* input text black */
+    background: transparent;
+    color: black;
 }
 
 .icon {
     font-size: 18px;
     cursor: pointer;
-    color: black;          /* icons black */
+    color: black;
 }
 
-/* LOGIN SECTION */
+/* ======================================================
+   LOGIN SECTION
+====================================================== */
 .login-section {
     background: url('images/hero_bg.jpg') no-repeat center center;
     background-size: cover;
@@ -135,7 +140,7 @@ body {
     margin-top: 10px;
     border-radius: 8px;
     border: 1px solid #997950;
-    color: black;         /* input text black */
+    color: black;
 }
 
 /* LOGIN BUTTON */
@@ -165,11 +170,117 @@ body {
     color: black;
 }
 
-/* FOOTER */
-footer {
-    background: #333;
-    color: white;
+/* ======================================================
+   FOOTER (from pg7)
+====================================================== */
+.dm-footer {
+    background: #ffffff;
+    color: #000000;
+    padding: 50px 0 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.dm-footer-container {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.dm-footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.dm-brand-title {
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.dm-logo {
+    width: 130px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.dm-footer-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.dm-footer-text {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.dm-footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.dm-footer-list li {
+    margin-bottom: 8px;
+}
+
+.dm-footer-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.dm-footer-list a:hover {
+    color: #997950;
+}
+
+.dm-social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.dm-social-icons a img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.dm-social-icons a img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.dm-footer-bottom {
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+    padding-top: 15px;
     text-align: center;
-    padding: 12px;
-    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .dm-footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .dm-social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .dm-footer-container {
+        grid-template-columns: 1fr;
+    }
 }
