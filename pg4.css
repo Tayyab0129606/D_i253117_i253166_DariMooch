@@ -1,0 +1,315 @@
+/* --- Existing pg4 CSS (unchanged) --- */
+/* TOP STRIP */
+.top-strip {
+    background: #fff;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* HEADER FONT SIZE */
+.navbar .logo h1 {
+    font-size: 22px; /* reduced to match Page 6 */
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* MAIN LAYOUT */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* IMAGES */
+.main-img {
+    width: 340px;
+    display: block;
+    margin: 0 auto; /* center the big image */
+}
+.thumbs {
+    display: flex;
+    justify-content: center; /* horizontal centered */
+    gap: 10px;
+    margin-top: 15px;
+}
+.thumbs img {
+    width: 55px;
+    cursor: pointer;
+}
+
+/* DETAILS */
+.details h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.rating {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.rating span {
+    color: gray;
+}
+
+/* BUTTONS STANDARD SIZE */
+.price, .instock-btn, .add-cart, .wishlist {
+    background: #997950;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* INSTOCK BUTTON SPECIFIC */
+.instock-btn {
+    width: 120px;
+    padding: 8px 15px;
+}
+
+/* CART & WISHLIST ROW */
+.cart-wishlist-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* QUANTITY */
+.qty-row {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.qty-row select {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.qty {
+    padding: 5px 10px;
+    font-size: 18px;
+    background: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.num {
+    font-size: 17px;
+}
+
+/* TABS */
+.tabs {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.tabs button {
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding-bottom: 6px;
+    border-bottom: 2px solid transparent;
+}
+.tabs button:hover {
+    border-color: black;
+}
+
+/* RELATED PRODUCTS */
+.related-products {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.product-box {
+    height: 180px;
+    background: #f5f5f5;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* REVIEWS */
+.reviews {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.reviews h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.review {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.rev-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+.date {
+    color: gray;
+}
+.stars {
+    font-weight: bold;
+    color: #997950;
+}
+.review p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* --- New Footer CSS from pg7 --- */
+/* FOOTER MAIN */
+.dm-footer {
+  background: #ffffff;
+  color: #000000;
+  padding: 50px 0 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* GRID LAYOUT */
+.dm-footer-container {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* BASIC COLUMN STYLE */
+.dm-footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* BRAND TITLE */
+.dm-brand-title {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* LOGO */
+.dm-logo {
+  width: 130px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* HEADINGS */
+.dm-footer-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* NORMAL TEXT */
+.dm-footer-text {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* LIST */
+.dm-footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.dm-footer-list li {
+  margin-bottom: 8px;
+}
+
+.dm-footer-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.dm-footer-list a:hover {
+  color: #997950;
+}
+
+/* SOCIAL ICONS */
+.dm-social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.dm-social-icons a img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.dm-social-icons a img:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+/* COPYRIGHT */
+.dm-footer-bottom {
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .dm-footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+
+  .dm-social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .dm-footer-container {
+    grid-template-columns: 1fr;
+  }
+}
