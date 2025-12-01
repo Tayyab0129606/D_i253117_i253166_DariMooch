@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="unique_feature.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Beard & Skin Quiz — Dari Mooch</title>
-  <link rel="stylesheet" href="../css/quiz.css" />
+  <title>Unique Feature — Dari Mooch</title>
+  <link rel="stylesheet" href="uf.css" />
 </head>
 <body>
-  <header>
-    <h1>Beard & Skin Quiz</h1>
-    <p class="subtitle">Answer a few quick questions to discover your perfect product blend</p>
+
+  <!-- ✅ Custom Header (unchanged from your design) -->
+  <nav class="main-header">
+    <div class="header-left">
+      <img src="images/image4.png" alt="Dari Mooch Logo">
+      <h1>DARI MOOCH</h1>
+    </div>
+
+    <div class="header-center">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT US</a>
+      <a href="#">NEW LAUNCHES</a>
+      <a href="#">SALE</a>
+    </div>
+
+    <div class="header-right">
+      <div class="search-bar">
+        <input type="text" placeholder="Search Product">
+        <span class="icon">🔍</span>
+      </div>
+      <span class="icon">👤</span>
+      <span class="icon">🛒</span>
+    </div>
+  </nav>
+
+  <!-- ✅ Quiz Section (unchanged) -->
+  <header class="quiz-header">
+    <h1>Discover Your Perfect Blend</h1>
+    <p class="subtitle">Answer a few quick questions to find the ideal grooming product for your beard & skin.</p>
   </header>
 
   <main>
@@ -49,13 +76,64 @@
 
         <button type="submit">Find My Blend</button>
       </form>
+      <div id="resultBox" class="result-box"></div>
     </section>
   </main>
-
   <footer>
-    <p>&copy; 2025 Dari Mooch. All rights reserved.</p>
-  </footer>
+    <footer class="dm-footer">
+  <div class="dm-footer-container">
+</footer>
+<footer class="dm-footer">
+  <div class="dm-footer-container">
 
-  <script src="../js/quiz.js"></script>
+    <!-- Column 1 — Logo -->
+    <div class="dm-footer-col">
+      <h3 class="dm-brand-title">DariMooch</h3>
+
+      <img src="images/image4.png" 
+           alt="DariMooch Logo" class="dm-logo">
+
+      <p class="dm-footer-text">
+        Premium Beard Grooming Essentials for Modern Men.
+      </p>
+    </div>
+
+    <!-- Column 2 — Quick Links -->
+    <div class="dm-footer-col">
+      <h3 class="dm-footer-heading">Quick Links</h3>
+      <ul class="dm-footer-list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Returns</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 — Contact Info -->
+    <div class="dm-footer-col">
+      <h3 class="dm-footer-heading">Contact Us</h3>
+      <p class="dm-footer-text">Email: support@darimoch.com</p>
+      <p class="dm-footer-text">Phone: ‪+92 300 1234567‬</p>
+      <p class="dm-footer-text">Karachi, Pakistan</p>
+    </div>
+
+    <!-- Column 4 — Follow Us -->
+    <div class="dm-footer-col">
+      <h3 class="dm-footer-heading">Follow Us</h3>
+      <div class="dm-social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="dm-footer-bottom">
+    <p>© 2025 DariMooch. All Rights Reserved.</p>
+  </div>
+</footer>
+  <script src="unique_feature.js"></script>
 </body>
 </html>

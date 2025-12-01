@@ -1,64 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="page9.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Us — Dari Mooch</title>
-  <link rel="stylesheet" href="../css/contact.css" />
+  <link rel="stylesheet" href="contact.css" />
 </head>
 <body>
-  <header>
-    <h1>Contact Us</h1>
-  </header>
+    <!-- ✅ Custom Header-->
+  <nav class="main-header">
+    <div class="header-left">
+      <img src="images/image4.png" alt="Dari Mooch Logo">
+      <h1>DARI MOOCH</h1>
+    </div>
 
-  <main>
+    <div class="header-center">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT US</a>
+      <a href="#">NEW LAUNCHES</a>
+      <a href="#">SALE</a>
+    </div>
+
+    <div class="header-right">
+      <div class="search-bar">
+        <input type="text" placeholder="Search Product">
+        <span class="icon">🔍</span>
+      </div>
+      <span class="icon">👤</span>
+      <span class="icon">🛒</span>
+    </div>
+  </nav>
     <!-- Contact Form -->
-    <section class="contact-form">
-      <h2>Get in Touch</h2>
-      <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send Message</button>
+    <section class="form-section">
+      <h2 class="section-title">Send Us a Message</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
       </form>
     </section>
 
-    <!-- Contact Info -->
-    <section class="contact-info">
-      <h2>Our Details</h2>
-      <p>Email: <a href="mailto:info@darimooch.com">info@darimooch.com</a></p>
-      <p>Phone: <a href="tel:+923001234567">+92 300 1234567</a></p>
-      <p>Address: Gojra, Faisalabad, Pakistan</p>
+    <!-- Contact Methods -->
+    <section class="info-section">
+      <h2 class="section-title">Other Ways to Reach Us</h2>
+      <div class="info-grid">
+        <div class="info-box">
+          <h3>Email</h3>
+          <p>help@darimooch.pk.com</p>
+        </div>
+        <div class="info-box">
+          <h3>Phone</h3>
+          <p>+92-3XX-XXXXXXX</p>
+        </div>
+        <div class="info-box">
+          <h3>Address</h3>
+          <p>Office #12, Block B, Lahore, Pakistan</p>
+        </div>
+        <div class="info-box">
+          <h3>Live Chat</h3>
+          <p>Available 9am–6pm (Mon–Sat)</p>
+        </div>
+      </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="faq">
-      <h2>Frequently Asked Questions</h2>
-      <details>
-        <summary>How long does delivery take?</summary>
-        <p>Delivery usually takes 3–5 working days within Pakistan.</p>
-      </details>
-      <details>
-        <summary>Do you ship internationally?</summary>
-        <p>Currently, we only ship within Pakistan.</p>
-      </details>
-      <details>
-        <summary>Are your images original?</summary>
-        <p>All product and team images are AI-generated and clearly labeled.</p>
-      </details>
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-box">
+        <details>
+          <summary>How long does delivery take?</summary>
+          <p>Orders typically arrive within 3–5 business days.</p>
+        </details>
+        <details>
+          <summary>Can I return a product?</summary>
+          <p>Yes, within 14 days of purchase. Please keep the receipt and packaging.</p>
+        </details>
+        <details>
+          <summary>Do you ship internationally?</summary>
+          <p>Currently, we only ship within Pakistan.</p>
+        </details>
+        <details>
+          <summary>Is live chat available on weekends?</summary>
+          <p>Live chat is available Monday to Saturday, 9am to 6pm.</p>
+        </details>
+      </div>
     </section>
   </main>
-
   <footer>
-    <p>&copy; 2025 Dari Mooch. All rights reserved.</p>
-  </footer>
+    <footer class="dm-footer">
+  <div class="dm-footer-container">
+</footer>
+<footer class="dm-footer">
+  <div class="dm-footer-container">
 
-  <script src="../js/contact.js"></script>
+    <!-- Column 1 — Logo -->
+    <div class="dm-footer-col">
+      <h3 class="dm-brand-title">DariMooch</h3>
+
+      <img src="images/image4.png" 
+           alt="DariMooch Logo" class="dm-logo">
+
+      <p class="dm-footer-text">
+        Premium Beard Grooming Essentials for Modern Men.
+      </p>
+    </div>
+
+    <!-- Column 2 — Quick Links -->
+    <div class="dm-footer-col">
+      <h3 class="dm-footer-heading">Quick Links</h3>
+      <ul class="dm-footer-list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Returns</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 — Contact Info -->
+    <div class="dm-footer-col">
+      <h3 class="dm-footer-heading">Contact Us</h3>
+      <p class="dm-footer-text">Email: support@darimoch.com</p>
+      <p class="dm-footer-text">Phone: ‪+92 300 1234567‬</p>
+      <p class="dm-footer-text">Karachi, Pakistan</p>
+    </div>
+
+    <!-- Column 4 — Follow Us -->
+    <div class="dm-footer-col">
+      <h3 class="dm-footer-heading">Follow Us</h3>
+      <div class="dm-social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="dm-footer-bottom">
+    <p>© 2025 DariMooch. All Rights Reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
+
+  
+

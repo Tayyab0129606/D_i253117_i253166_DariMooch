@@ -1,62 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <link rel="stylesheet" href="page10.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Checkout — Dari Mooch</title>
-  <link rel="stylesheet" href="../css/checkout.css" />
+  <link rel="stylesheet" href="checkout.css" />
 </head>
 <body>
-  <header>
-    <h1>Checkout</h1>
-  </header>
+     <!-- ✅ Custom Header-->
+  <nav class="main-header">
+    <div class="header-left">
+      <img src="images/image4.png" alt="Dari Mooch Logo">
+      <h1>DARI MOOCH</h1>
+    </div>
 
-  <main>
-    <!-- Billing & Shipping -->
-    <section class="checkout-section">
-      <h2>Billing & Shipping Information</h2>
-      <form id="checkoutForm">
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" required />
+    <div class="header-center">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT US</a>
+      <a href="#">NEW LAUNCHES</a>
+      <a href="#">SALE</a>
+    </div>
 
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address" required />
-
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city" required />
-
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required />
+    <div class="header-right">
+      <div class="search-bar">
+        <input type="text" placeholder="Search Product">
+        <span class="icon">🔍</span>
+      </div>
+      <span class="icon">👤</span>
+      <span class="icon">🛒</span>
+    </div>
+  </nav>
+    <!-- Billing Info -->
+    <section class="form-section">
+      <h2 class="section-title">Billing Information</h2>
+      <form class="info-form">
+        <input type="text" placeholder="Full Name *" required />
+        <input type="email" placeholder="Email Address *" required />
+        <input type="tel" placeholder="Contact Number *" required />
+        <input type="text" placeholder="Address *" required />
+        <input type="text" placeholder="Town / Street No. *" required />
+        <input type="text" placeholder="City / Village *" required />
+        <input type="text" placeholder="District *" required />
+        <input type="text" placeholder="Postal Code *" required />
       </form>
     </section>
 
-    <!-- Payment Methods -->
-    <section class="checkout-section">
-      <h2>Payment Method</h2>
-      <div class="payment-options">
-        <button type="button" class="payment-btn" data-method="Credit Card">Credit Card</button>
-        <button type="button" class="payment-btn" data-method="Cash on Delivery">Cash on Delivery</button>
-        <button type="button" class="payment-btn" data-method="Bank Transfer">Bank Transfer</button>
+    <!-- Shipping Info -->
+    <section class="form-section">
+      <h2 class="section-title">Shipping Information</h2>
+      <form class="info-form">
+        <label><input type="checkbox" /> Same as billing address</label>
+        <input type="text" placeholder="New Address" />
+        <input type="text" placeholder="Town / Street No." />
+        <input type="text" placeholder="City / Village" />
+        <input type="text" placeholder="District" />
+        <input type="text" placeholder="Postal Code" />
+      </form>
+    </section>
+
+    <!-- Payment Method -->
+    <section class="payment-section">
+      <h2 class="section-title">Payment Method</h2>
+      <div class="payment-tabs">
+        <button class="tab active">Credit Card</button>
+        <button class="tab">Debit</button>
+        <button class="tab">PayPal</button>
+        <button class="tab">Apple Pay</button>
       </div>
-      <p id="selectedPayment">Selected: None</p>
+      <form class="payment-form">
+        <input type="text" placeholder="Card Number *" required />
+        <input type="text" placeholder="Expiry Date (MM/YY) *" required />
+        <input type="text" placeholder="CVV *" required />
+      </form>
     </section>
 
     <!-- Order Summary -->
-    <section class="checkout-section">
-      <h2>Order Summary</h2>
-      <ul id="orderItems">
-        <li>Beard Oil — Rs. 1200</li>
-        <li>Comb Set — Rs. 800</li>
-      </ul>
-      <p><strong>Total:</strong> Rs. 2000</p>
-      <button id="placeOrderBtn">Place Order</button>
+    <section class="summary-section">
+      <h2 class="section-title">Order Summary</h2>
+      <div class="summary-box">
+        <p><strong>Items:</strong> Beard Oil x2, Balm x1</p>
+        <p><strong>Subtotal:</strong> PKR 2,400</p>
+        <p><strong>Shipping:</strong> PKR 200</p>
+        <p><strong>Tax:</strong> PKR 120</p>
+        <hr />
+        <p class="total"><strong>Total:</strong> PKR 2,720</p>
+        <button class="place-order">PLACE ORDER</button>
+      </div>
     </section>
   </main>
+<footer>
+    <footer class="dm-footer">
+  <div class="dm-footer-container">
+</footer>
+<footer class="dm-footer">
+  <div class="dm-footer-container">
 
-  <footer>
-    <p>&copy; 2025 Dari Mooch. All rights reserved.</p>
-  </footer>
+    <!-- Column 1 — Logo -->
+    <div class="dm-footer-col">
+      <h3 class="dm-brand-title">DariMooch</h3>
 
-  <script src="../js/checkout.js"></script>
+      <img src="images/image4.png" 
+           alt="DariMooch Logo" class="dm-logo">
+
+      <p class="dm-footer-text">
+        Premium Beard Grooming Essentials for Modern Men.
+      </p>
+    </div>
+
+    <!-- Column 2 — Quick Links -->
+    <div class="dm-footer-col">
+      <h3 class="dm-footer-heading">Quick Links</h3>
+      <ul class="dm-footer-list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Returns</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 — Contact Info -->
+    <div class="dm-footer-col">
+      <h3 class="dm-footer-heading">Contact Us</h3>
+      <p class="dm-footer-text">Email: support@darimoch.com</p>
+      <p class="dm-footer-text">Phone: ‪+92 300 1234567‬</p>
+      <p class="dm-footer-text">Karachi, Pakistan</p>
+    </div>
+
+    <!-- Column 4 — Follow Us -->
+    <div class="dm-footer-col">
+      <h3 class="dm-footer-heading">Follow Us</h3>
+      <div class="dm-social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="dm-footer-bottom">
+    <p>© 2025 DariMooch. All Rights Reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
+
+  
+
