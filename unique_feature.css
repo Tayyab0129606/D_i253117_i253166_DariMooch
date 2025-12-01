@@ -10,7 +10,7 @@
 /* Header Styles         */
 /* ===================== */
 .main-header {
-  background-color: #fff;
+  background-color: #997950;
   padding: 14px 40px;
   display: flex;
   align-items: center;
@@ -87,8 +87,8 @@ body {
 .quiz-header {
   text-align: center;
   padding: 40px 20px;
-  background-color: #997950;
-  color: #fff;
+  background-color: #fff;
+  color: #997950;
 }
 
 .quiz-header h1 {
