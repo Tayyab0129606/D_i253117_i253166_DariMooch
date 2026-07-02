@@ -1,139 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="unique_feature.css">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Unique Feature — Dari Mooch</title>
-  <link rel="stylesheet" href="unique_feature.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dari Mooch — Grooming Recommendations</title>
+  <meta name="description" content="Take the Dari Mooch grooming recommendations profile test to find your perfect beard care routine."/>
+  <link rel="stylesheet" href="css/shared.css"/>
+  <link rel="stylesheet" href="css/unique_feature.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-
-  <!-- ✅ Custom Header (unchanged from your design) -->
-  <nav class="main-header">
-    <div class="header-left">
-      <img src="images/image4.png" alt="Dari Mooch Logo">
-      <h1>DARI MOOCH</h1>
+<nav class="navbar">
+  <a href="pg1.html" class="logo">
+    <img src="images/image4.png" alt="Dari Mooch Logo"/>
+    <h1>DARI <span>MOOCH</span></h1>
+  </a>
+  <ul class="nav-links">
+    <li><a href="pg1.html">HOME</a></li>
+    <li><a href="pg3.html">SHOP</a></li>
+    <li><a href="unique_feature.html" class="active">RECOMMENDED</a></li>
+    <li><a href="page8.html">ABOUT US</a></li>
+    <li><a href="page9.html">CONTACT US</a></li>
+  </ul>
+  <div class="right-section">
+    <div class="search-box">
+      <i class="fa fa-search"></i>
+      <input type="text" placeholder="Search Product..."/>
     </div>
+    <i class="fa-regular fa-user icon-btn"></i>
+    <a href="pg5.html" class="icon-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span class="cart-badge" id="cartBadge">0</span>
+    </a>
+  </div>
+</nav>
 
-    <div class="header-center">
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT US</a>
-      <a href="#">NEW LAUNCHES</a>
-      <a href="#">SALE</a>
-    </div>
+<section class="quiz-hero">
+  <div class="quiz-hero-content">
+    <h1>Discover Your Perfect <span>Blend</span></h1>
+    <p>Answer 4 quick questions and we'll match you with the ideal grooming routine for your beard.</p>
+  </div>
+</section>
 
-    <div class="header-right">
-      <div class="search-bar">
-        <input type="text" placeholder="Search Product">
-        <span class="icon">🔍</span>
-      </div>
-      <span class="icon">👤</span>
-      <span class="icon">🛒</span>
-    </div>
-  </nav>
-
-  <!-- ✅ Quiz Section (unchanged) -->
-  <header class="quiz-header">
-    <h1>Discover Your Perfect Blend</h1>
-    <p class="subtitle">Answer a few quick questions to find the ideal grooming product for your beard & skin.</p>
-  </header>
-
-  <main>
-    <section class="quiz-box">
-      <form id="blendQuiz">
-        <label for="length">What is your beard length?</label>
-        <select id="length" required>
-          <option value="">Select beard length</option>
-          <option value="short">Short</option>
+<div class="quiz-section">
+  <div class="quiz-card">
+    <h3>✦ Your Personalized Grooming Profile</h3>
+    <form id="blendQuiz">
+      <div class="quiz-field">
+        <label for="length"><i class="fa-solid fa-ruler"></i> Beard Length</label>
+        <select id="length">
+          <option value="">— Select your beard length —</option>
+          <option value="short">Short (Stubble)</option>
           <option value="medium">Medium</option>
-          <option value="long">Long</option>
+          <option value="long">Long (Full Beard)</option>
         </select>
-
-        <label for="health">How would you describe your beard health?</label>
-        <select id="health" required>
-          <option value="">Select beard health</option>
-          <option value="dry">Dry</option>
-          <option value="normal">Normal</option>
-          <option value="patchy">Patchy</option>
+      </div>
+      <div class="quiz-field">
+        <label for="health"><i class="fa-solid fa-heart-pulse"></i> Beard Health</label>
+        <select id="health">
+          <option value="">— Select your beard condition —</option>
+          <option value="dry">Dry &amp; Brittle</option>
+          <option value="normal">Normal &amp; Healthy</option>
+          <option value="patchy">Patchy &amp; Uneven</option>
         </select>
-
-        <label for="skin">Is your skin generally dry, oily, or a mix?</label>
-        <select id="skin" required>
-          <option value="">Select skin type</option>
+      </div>
+      <div class="quiz-field">
+        <label for="skin"><i class="fa-solid fa-droplet"></i> Skin Type</label>
+        <select id="skin">
+          <option value="">— Select your skin type —</option>
           <option value="dry">Dry</option>
           <option value="oily">Oily</option>
           <option value="combination">Combination</option>
         </select>
-
-        <label for="style">Which product type are you most interested in?</label>
-        <select id="style" required>
-          <option value="">Select product type</option>
+      </div>
+      <div class="quiz-field">
+        <label for="style"><i class="fa-solid fa-flask"></i> Product Preference</label>
+        <select id="style">
+          <option value="">— What type of product interests you? —</option>
           <option value="oil">Beard Oil</option>
           <option value="balm">Beard Balm</option>
           <option value="wash">Beard Wash</option>
         </select>
+      </div>
+      <button type="submit" class="quiz-submit-btn">
+        <i class="fa-solid fa-wand-magic-sparkles"></i> Find My Perfect Blend
+      </button>
+    </form>
+  </div>
+</div>
 
-        <button type="submit">Find My Blend</button>
-      </form>
-      <div id="resultBox" class="result-box"></div>
-    </section>
-  </main>
-  <footer>
-    <footer class="dm-footer">
-  <div class="dm-footer-container">
-</footer>
+<div class="quiz-results" id="quizResults" style="display:none;"></div>
+
 <footer class="dm-footer">
   <div class="dm-footer-container">
-
-    <!-- Column 1 — Logo -->
     <div class="dm-footer-col">
-      <h3 class="dm-brand-title">DariMooch</h3>
-
-      <img src="images/image4.png" 
-           alt="DariMooch Logo" class="dm-logo">
-
-      <p class="dm-footer-text">
-        Premium Beard Grooming Essentials for Modern Men.
-      </p>
+      <div class="dm-brand-title">DARI <span>MOOCH</span></div>
+      <img src="images/image4.png" alt="Dari Mooch Logo" style="height: 48px; width: 48px; border-radius: 50%; margin-bottom: 12px; border: 2px solid var(--accent-color); background: #fff; padding: 3px;"/>
+      <p class="dm-footer-text">Premium Beard Grooming Essentials for Modern Men.</p>
+      <div class="dm-ai-disclaimer">Disclaimer: Images on this website are AI-generated for educational/demonstrative purposes. Generated using Gemini.</div>
     </div>
-
-    <!-- Column 2 — Quick Links -->
     <div class="dm-footer-col">
-      <h3 class="dm-footer-heading">Quick Links</h3>
+      <div class="dm-footer-heading">Quick Links</div>
       <ul class="dm-footer-list">
-        <li><a href="#">About</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Returns</a></li>
+        <li><a href="pg1.html">Home</a></li>
+        <li><a href="pg3.html">Shop Products</a></li>
+        <li><a href="unique_feature.html">Recommended</a></li>
+        <li><a href="page8.html">About Us</a></li>
+        <li><a href="page9.html">Contact Us</a></li>
       </ul>
     </div>
-
-    <!-- Column 3 — Contact Info -->
     <div class="dm-footer-col">
-      <h3 class="dm-footer-heading">Contact Us</h3>
-      <p class="dm-footer-text">Email: support@darimoch.com</p>
-      <p class="dm-footer-text">Phone: ‪+92 300 1234567‬</p>
-      <p class="dm-footer-text">Karachi, Pakistan</p>
+      <div class="dm-footer-heading">Contact</div>
+      <ul class="dm-footer-list">
+        <li><a href="mailto:support@darimooch.com"><i class="fa-solid fa-envelope"></i> support@darimooch.com</a></li>
+        <li><a href="tel:+923001234567"><i class="fa-solid fa-phone"></i> +92 300 1234567</a></li>
+        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</a></li>
+      </ul>
     </div>
-
-    <!-- Column 4 — Follow Us -->
     <div class="dm-footer-col">
-      <h3 class="dm-footer-heading">Follow Us</h3>
+      <div class="dm-footer-heading">Follow Us</div>
       <div class="dm-social-icons">
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
       </div>
     </div>
-
   </div>
-
-  <div class="dm-footer-bottom">
-    <p>© 2025 DariMooch. All Rights Reserved.</p>
-  </div>
+  <div class="dm-footer-bottom">© 2025 DariMooch. All Rights Reserved.</div>
 </footer>
-  <script src="unique_feature.js"></script>
+
+<script src="js/shared.js"></script>
+<script src="js/unique_feature.js"></script>
 </body>
 </html>

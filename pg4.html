@@ -1,156 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beard Growth Kit - Dari Mooch</title>
-    <link rel="stylesheet" href="pg4.css">
-    <link rel="stylesheet" href="pg6.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dari Mooch — Grooming Product Detail</title>
+  <link rel="stylesheet" href="css/shared.css"/>
+  <link rel="stylesheet" href="css/pg4.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
+<div class="top-strip">🎁 FLAT 30% OFF TODAY! USE CODE: <span>DARIMOOCH30</span></div>
 
-<!-- TOP STRIP -->
-<div class="top-strip">FLAT 30% OFF TODAY! GET NOW</div>
+<nav class="navbar">
+  <a href="pg1.html" class="logo">
+    <img src="images/image4.png" alt="Dari Mooch Logo"/>
+    <h1>DARI <span>MOOCH</span></h1>
+  </a>
+  <ul class="nav-links">
+    <li><a href="pg1.html" id="nav-home">HOME</a></li>
+    <li><a href="pg3.html" id="nav-shop">SHOP</a></li>
+    <li><a href="unique_feature.html" id="nav-quiz">RECOMMENDED</a></li>
+    <li><a href="page8.html" id="nav-about">ABOUT US</a></li>
+    <li><a href="page9.html" id="nav-contact">CONTACT US</a></li>
+  </ul>
+  <div class="right-section">
+    <div class="search-box">
+      <i class="fa fa-search"></i>
+      <input type="text" placeholder="Search Product..."/>
+    </div>
+    <i class="fa-regular fa-user icon-btn"></i>
+    <a href="pg5.html" class="icon-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span class="cart-badge" id="cartBadge">0</span>
+    </a>
+  </div>
+</nav>
 
-<!-- HEADER -->
-<header class="navbar"> 
-    <div class="logo"> 
-        <img src="images/image4.png" alt="Dari Mooch Logo"> 
-        <h1>DARI MOOCH</h1> 
-    </div> 
-    <nav class="nav-links"> 
-        <a href="#">HOME</a> 
-        <a href="#">ABOUT US</a> 
-        <a href="#">NEW LAUNCHES</a> 
-        <a href="#">SALE</a> 
-    </nav> 
-    <div class="right-section"> 
-        <div class="search-box"> 
-            <i class="fa fa-search"></i> 
-            <input type="text" placeholder="Search Product"> 
-        </div> 
-        <i class="fa-regular fa-user icon"></i> 
-        <i class="fa-solid fa-bag-shopping icon"></i> 
-    </div> 
-</header>
+<main class="product-details-container">
+  <!-- GALLERY -->
+  <div class="gallery-section">
+    <div class="main-image-wrap" style="height: 380px; width: 100%; display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 12px; border: 1px solid #e8e4df; padding: 20px; overflow: hidden; box-shadow: var(--shadow-card);">
+      <img id="mainImg" src="images/image1.png" alt="Product Image" style="max-width: 100%; max-height: 100%; object-fit: contain;"/>
+    </div>
+    <div class="thumbnail-list" id="thumbnailContainer" style="display: flex; gap: 12px; margin-top: 10px;"></div>
+  </div>
 
-<!-- MAIN SECTION -->
-<div class="container">
-    <div class="product-images">
-        <img id="mainImg" src="images/image15.png" class="main-img" />
-        <div class="thumbs">
-            <img class="thumb" src="images/image6.png" />
-            <img class="thumb" src="images/image16.png" />
-            <img class="thumb" src="images/image17.png" />
-        </div>
+  <!-- DETAILS -->
+  <div class="details-section">
+    <div class="detail-category">✦ Premium Collection</div>
+    <h2 id="prodTitle">Product Name</h2>
+
+    <div class="detail-meta">
+      <div class="detail-rating">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <span>(288 reviews)</span>
+      </div>
+      <span class="meta-divider">|</span>
+      <span style="font-size:13px;color:#777;">100ml / 3.4 fl. oz.</span>
+      <span class="meta-divider">|</span>
+      <span class="stock-badge">✓ In Stock</span>
     </div>
 
-    <div class="details">
-        <h2>Beard Growth Kit</h2>
+    <div class="detail-price" id="prodPrice">PKR 0</div>
+    <p class="detail-desc" id="prodDesc">Loading product details...</p>
 
-        <div class="rating">
-            ★★★★★ <span>288 reviews</span> <span class="ml">|</span> <span>100ml</span>
-        </div>
+    <ul class="bullet-list">
+      <li>100% organic, cold-pressed ingredients</li>
+      <li>Promotes softness, shine, and healthy growth</li>
+      <li>Sulfate-free & paraben-free formula</li>
+      <li>Dermatologically tested — safe for all skin types</li>
+    </ul>
 
-        <div class="instock-btn">In Stock</div>
-
-        <p class="desc"> 
-            Our Growth Kit contains 3 products formulated with active ingredients to help grow a healthier fuller beard. Kit includes:
-        </p>
-
-        <ul class="kit-list">
-            <li>Beard Growth Oil</li>
-            <li>Beard Growth Shampoo</li>
-            <li>Beard Growth Biotin Spray</li>
-        </ul>
-
-        <div class="qty-row">
-            <button class="qty" id="minusBtn">-</button>
-            <span class="num" id="qtyNum">1</span>
-            <button class="qty" id="plusBtn">+</button>
-        </div>
-
-        <div class="cart-wishlist-row">
-            <button class="add-cart" id="addCartBtn">Add to Cart</button>
-            <button class="wishlist" id="wishlistBtn">Add to Wishlist</button>
-        </div>
-
-        <div class="tabs">
-            <button>Details</button>
-            <button>Specifications</button>
-            <button>Shipping details</button>
-        </div>
-
-    </div>
-</div>
-
-<!-- RELATED PRODUCTS -->
-<div class="related-products">
-    <h2>Related Products</h2>
-    <div class="products-grid">
-        <div class="product-box"><img src="images/image1.png" alt=""></div>
-        <div class="product-box"><img src="images/image2.png" alt=""></div>
-        <div class="product-box"><img src="images/image3.png" alt=""></div>
-        <div class="product-box"><img src="images/image11.png" alt=""></div>
-    </div>
-</div>
-
-<!-- FOOTER (pg7 footer integrated) -->
-<footer class="dm-footer">
-  <div class="dm-footer-container">
-
-    <!-- Column 1 — Logo -->
-    <div class="dm-footer-col">
-      <h3 class="dm-brand-title">DariMooch</h3>
-
-      <img src="images/image4.png" 
-           alt="DariMooch Logo" class="dm-logo">
-
-      <p class="dm-footer-text">
-        Premium Beard Grooming Essentials for Modern Men.
-      </p>
-    </div>
-
-    <!-- Column 2 — Quick Links -->
-    <div class="dm-footer-col">
-      <h3 class="dm-footer-heading">Quick Links</h3>
-      <ul class="dm-footer-list">
-        <li><a href="#">About</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Returns</a></li>
-      </ul>
-    </div>
-
-    <!-- Column 3 — Contact Info -->
-    <div class="dm-footer-col">
-      <h3 class="dm-footer-heading">Contact Us</h3>
-      <p class="dm-footer-text">Email: support@darimoch.com</p>
-      <p class="dm-footer-text">Phone: +92 300 1234567</p>
-      <p class="dm-footer-text">Karachi, Pakistan</p>
-    </div>
-
-    <!-- Column 4 — Follow Us -->
-    <div class="dm-footer-col">
-      <h3 class="dm-footer-heading">Follow Us</h3>
-      <div class="dm-social-icons">
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+    <div class="quantity-wrap">
+      <div class="quantity-label">Quantity</div>
+      <div class="qty-controls">
+        <button class="qty-btn" id="minusBtn">−</button>
+        <span class="qty-display" id="qtyDisplay">1</span>
+        <button class="qty-btn" id="plusBtn">+</button>
       </div>
     </div>
 
-  </div>
+    <div class="action-buttons">
+      <button class="add-to-cart-btn" id="addToCartBtn">
+        <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+      </button>
+      <button class="buy-now-detail-btn" id="buyNowBtn" style="flex:1; background:linear-gradient(135deg,var(--accent-color),var(--accent-hover)); color:#fff; border:none; border-radius:8px; padding:14px 24px; font-size:15px; font-weight:700; cursor:pointer; font-family:var(--font-primary); transition:var(--transition); box-shadow:0 4px 15px rgba(184,138,90,0.35); display:flex; align-items:center; justify-content:center; gap:8px;">
+        <i class="fa-solid fa-bolt"></i> Buy Now
+      </button>
+      <button class="wishlist-btn" id="wishlistBtn">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+    </div>
 
-  <div class="dm-footer-bottom">
-    <p>© 2025 DariMooch. All Rights Reserved.</p>
+    <div class="details-tabs">
+      <div class="tabs-header">
+        <button class="tab-link active" data-tab="details">Description</button>
+        <button class="tab-link" data-tab="specs">Specifications</button>
+        <button class="tab-link" data-tab="shipping">Shipping</button>
+      </div>
+      <div class="tab-pane active" id="tab-details">
+        <p>Our premium grooming product is crafted using the finest natural ingredients, sourced ethically from around the world. Each formula has been developed to give your beard the nourishment it deserves — promoting healthier growth, softness, and a natural shine.</p>
+      </div>
+      <div class="tab-pane" id="tab-specs">
+        <p><strong>Volume:</strong> 100ml / 3.4 fl. oz.<br/>
+        <strong>Ingredients:</strong> Jojoba Oil, Argan Oil, Vitamin E, Castor Oil<br/>
+        <strong>Suitable For:</strong> All beard types & skin types<br/>
+        <strong>Shelf Life:</strong> 24 months</p>
+      </div>
+      <div class="tab-pane" id="tab-shipping">
+        <p><strong>Standard Delivery:</strong> 3–5 business days (PKR 200)<br/>
+        <strong>Free Delivery:</strong> Orders above PKR 2,000<br/>
+        <strong>Coverage:</strong> All major cities in Pakistan<br/>
+        <strong>Returns:</strong> 14-day hassle-free return policy</p>
+      </div>
+    </div>
   </div>
+</main>
+
+<!-- RELATED PRODUCTS -->
+<section class="related-products">
+  <h3>You May Also Like</h3>
+  <div class="related-grid">
+    <div class="related-card" onclick="location.href='pg4.html?id=oil-02'">
+      <div class="related-card-img" style="height: 160px; display: flex; align-items: center; justify-content: center; background: #fff; padding: 10px;"><img src="images/image5.png" alt="Urban Beard Oil" style="max-width: 100%; max-height: 100%; object-fit: contain;"/></div>
+      <div class="related-card-info">
+        <div class="related-card-name">Urban Beard Oil</div>
+        <div class="related-card-price">PKR 2,200</div>
+      </div>
+    </div>
+    <div class="related-card" onclick="location.href='pg4.html?id=oil-03'">
+      <div class="related-card-img" style="height: 160px; display: flex; align-items: center; justify-content: center; background: #fff; padding: 10px;"><img src="images/image6.png" alt="Castor Beard Oil" style="max-width: 100%; max-height: 100%; object-fit: contain;"/></div>
+      <div class="related-card-info">
+        <div class="related-card-name">Castor Beard Oil</div>
+        <div class="related-card-price">PKR 1,800</div>
+      </div>
+    </div>
+    <div class="related-card" onclick="location.href='pg4.html?id=oil-04'">
+      <div class="related-card-img" style="height: 160px; display: flex; align-items: center; justify-content: center; background: #fff; padding: 10px;"><img src="images/image7.png" alt="Growth Blend Oil" style="max-width: 100%; max-height: 100%; object-fit: contain;"/></div>
+      <div class="related-card-info">
+        <div class="related-card-name">Growth Blend Oil</div>
+        <div class="related-card-price">PKR 2,800</div>
+      </div>
+    </div>
+    <div class="related-card" onclick="location.href='pg4.html?id=shampoo-01'">
+      <div class="related-card-img" style="height: 160px; display: flex; align-items: center; justify-content: center; background: #fff; padding: 10px;"><img src="images/image10.png" alt="Anti-Hairfall Shampoo" style="max-width: 100%; max-height: 100%; object-fit: contain;"/></div>
+      <div class="related-card-info">
+        <div class="related-card-name">Anti-Hairfall Shampoo</div>
+        <div class="related-card-price">PKR 1,500</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="dm-footer">
+  <div class="dm-footer-container">
+    <div class="dm-footer-col">
+      <div class="dm-brand-title">DARI <span>MOOCH</span></div>
+      <img src="images/image4.png" alt="Dari Mooch Logo" style="height: 48px; width: 48px; border-radius: 50%; margin-bottom: 12px; border: 2px solid var(--accent-color); background: #fff; padding: 3px;"/>
+      <p class="dm-footer-text">Premium Beard Grooming Essentials for Modern Men.</p>
+      <div class="dm-ai-disclaimer">Disclaimer: Images on this website are AI-generated for educational/demonstrative purposes. Generated using Gemini.</div>
+    </div>
+    <div class="dm-footer-col">
+      <div class="dm-footer-heading">Quick Links</div>
+      <ul class="dm-footer-list">
+        <li><a href="pg1.html">Home</a></li>
+        <li><a href="pg3.html">Shop Products</a></li>
+        <li><a href="unique_feature.html">Recommended</a></li>
+        <li><a href="page8.html">About Us</a></li>
+        <li><a href="page9.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="dm-footer-col">
+      <div class="dm-footer-heading">Contact</div>
+      <ul class="dm-footer-list">
+        <li><a href="mailto:support@darimooch.com"><i class="fa-solid fa-envelope"></i> support@darimooch.com</a></li>
+        <li><a href="tel:+923001234567"><i class="fa-solid fa-phone"></i> +92 300 1234567</a></li>
+        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</a></li>
+      </ul>
+    </div>
+    <div class="dm-footer-col">
+      <div class="dm-footer-heading">Follow Us</div>
+      <div class="dm-social-icons">
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="dm-footer-bottom">© 2025 DariMooch. All Rights Reserved.</div>
 </footer>
 
-<!-- LINK TO JS -->
-<script src="pg4.js"></script>
-
+<script src="js/shared.js"></script>
+<script src="js/pg4.js"></script>
 </body>
 </html>

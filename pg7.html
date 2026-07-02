@@ -1,52 +1,121 @@
-<link rel="stylesheet" href="pg7.css">
-<footer class="dm-footer">
-  <div class="dm-footer-container">
-
-    <!-- Column 1 — Logo -->
-    <div class="dm-footer-col">
-      <h3 class="dm-brand-title">DariMooch</h3>
-
-      <img src="images/image4.png" 
-           alt="DariMooch Logo" class="dm-logo">
-
-      <p class="dm-footer-text">
-        Premium Beard Grooming Essentials for Modern Men.
-      </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dari Mooch — Order Confirmed!</title>
+  <link rel="stylesheet" href="css/shared.css"/>
+  <link rel="stylesheet" href="css/pg7.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+<nav class="navbar">
+  <a href="pg1.html" class="logo">
+    <img src="images/image4.png" alt="Dari Mooch Logo"/>
+    <h1>DARI <span>MOOCH</span></h1>
+  </a>
+  <ul class="nav-links">
+    <li><a href="pg1.html" id="nav-home">HOME</a></li>
+    <li><a href="pg3.html" id="nav-shop">SHOP</a></li>
+    <li><a href="unique_feature.html" id="nav-quiz">RECOMMENDED</a></li>
+    <li><a href="page8.html" id="nav-about">ABOUT US</a></li>
+    <li><a href="page9.html" id="nav-contact">CONTACT US</a></li>
+  </ul>
+  <div class="right-section">
+    <div class="search-box">
+      <i class="fa fa-search"></i>
+      <input type="text" placeholder="Search Product..."/>
     </div>
+    <i class="fa-regular fa-user icon-btn"></i>
+    <a href="pg5.html" class="icon-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span class="cart-badge" id="cartBadge">0</span>
+    </a>
+  </div>
+</nav>
 
-    <!-- Column 2 — Quick Links -->
-    <div class="dm-footer-col">
-      <h3 class="dm-footer-heading">Quick Links</h3>
-      <ul class="dm-footer-list">
-        <li><a href="#">About</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Returns</a></li>
-      </ul>
-    </div>
+<div class="success-container">
+  <div class="success-card">
+    <i class="fa-solid fa-circle-check success-icon"></i>
+    <h2>Order Confirmed!</h2>
+    <p class="order-msg">
+      Thank you, <strong><span id="orderName">Valued Customer</span></strong>!<br/>
+      Your order <strong>#<span id="orderRef">DM-XXXXXX</span></strong> has been placed successfully.<br/>
+      You'll receive a confirmation SMS shortly.
+    </p>
 
-    <!-- Column 3 — Contact Info -->
-    <div class="dm-footer-col">
-      <h3 class="dm-footer-heading">Contact Us</h3>
-      <p class="dm-footer-text">Email: support@darimoch.com</p>
-      <p class="dm-footer-text">Phone: +92 300 1234567</p>
-      <p class="dm-footer-text">Karachi, Pakistan</p>
-    </div>
-
-    <!-- Column 4 — Follow Us -->
-    <div class="dm-footer-col">
-      <h3 class="dm-footer-heading">Follow Us</h3>
-      <div class="dm-social-icons">
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+    <div class="timeline">
+      <div class="timeline-progress" id="timelineProgress"></div>
+      <div class="step completed">
+        <div class="step-icon"><i class="fa-solid fa-receipt"></i></div>
+        <div class="step-label">Placed</div>
+      </div>
+      <div class="step active">
+        <div class="step-icon"><i class="fa-solid fa-box"></i></div>
+        <div class="step-label">Packing</div>
+      </div>
+      <div class="step">
+        <div class="step-icon"><i class="fa-solid fa-truck"></i></div>
+        <div class="step-label">Shipped</div>
+      </div>
+      <div class="step">
+        <div class="step-icon"><i class="fa-solid fa-house"></i></div>
+        <div class="step-label">Delivered</div>
       </div>
     </div>
 
-  </div>
+    <div class="order-details-box">
+      <h4>Order Summary</h4>
+      <div class="detail-row"><span>Items Ordered</span><span id="orderItems">—</span></div>
+      <div class="detail-row"><span>Subtotal</span><span id="orderSubtotal">—</span></div>
+      <div class="detail-row"><span>Shipping</span><span id="orderShipping">—</span></div>
+      <div class="detail-row"><span>Sales Tax (16%)</span><span id="orderTax">—</span></div>
+      <div class="total-row"><span>Grand Total</span><span id="orderTotal">—</span></div>
+    </div>
 
-  <div class="dm-footer-bottom">
-    <p>© 2025 DariMooch. All Rights Reserved.</p>
+    <a href="pg3.html" class="continue-btn">Continue Shopping →</a>
   </div>
+</div>
+
+<footer class="dm-footer">
+  <div class="dm-footer-container">
+    <div class="dm-footer-col">
+      <div class="dm-brand-title">DARI <span>MOOCH</span></div>
+      <img src="images/image4.png" alt="Dari Mooch Logo" style="height: 48px; width: 48px; border-radius: 50%; margin-bottom: 12px; border: 2px solid var(--accent-color); background: #fff; padding: 3px;"/>
+      <p class="dm-footer-text">Premium Beard Grooming Essentials for Modern Men.</p>
+      <div class="dm-ai-disclaimer">Disclaimer: Images on this website are AI-generated for educational/demonstrative purposes. Generated using Gemini.</div>
+    </div>
+    <div class="dm-footer-col">
+      <div class="dm-footer-heading">Quick Links</div>
+      <ul class="dm-footer-list">
+        <li><a href="pg1.html">Home</a></li>
+        <li><a href="pg3.html">Shop Products</a></li>
+        <li><a href="unique_feature.html">Recommended</a></li>
+        <li><a href="page8.html">About Us</a></li>
+        <li><a href="page9.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="dm-footer-col">
+      <div class="dm-footer-heading">Contact</div>
+      <ul class="dm-footer-list">
+        <li><a href="mailto:support@darimooch.com"><i class="fa-solid fa-envelope"></i> support@darimooch.com</a></li>
+        <li><a href="tel:+923001234567"><i class="fa-solid fa-phone"></i> +92 300 1234567</a></li>
+        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</a></li>
+      </ul>
+    </div>
+    <div class="dm-footer-col">
+      <div class="dm-footer-heading">Follow Us</div>
+      <div class="dm-social-icons">
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="dm-footer-bottom">© 2025 DariMooch. All Rights Reserved.</div>
 </footer>
+
+<script src="js/shared.js"></script>
+<script src="js/pg7.js"></script>
+</body>
+</html>

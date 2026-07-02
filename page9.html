@@ -1,151 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="page9.css">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact Us — Dari Mooch</title>
-  <link rel="stylesheet" href="contact.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dari Mooch — Contact Us</title>
+  <meta name="description" content="Get in touch with Dari Mooch — we're here to help with your grooming questions."/>
+  <link rel="stylesheet" href="css/shared.css"/>
+  <link rel="stylesheet" href="css/page9.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-    <!-- ✅ Custom Header-->
-  <nav class="main-header">
-    <div class="header-left">
-      <img src="images/image4.png" alt="Dari Mooch Logo">
-      <h1>DARI MOOCH</h1>
+<nav class="navbar">
+  <a href="pg1.html" class="logo">
+    <img src="images/image4.png" alt="Dari Mooch Logo"/>
+    <h1>DARI <span>MOOCH</span></h1>
+  </a>
+  <ul class="nav-links">
+    <li><a href="pg1.html">HOME</a></li>
+    <li><a href="pg3.html">SHOP</a></li>
+    <li><a href="unique_feature.html">RECOMMENDED</a></li>
+    <li><a href="page8.html">ABOUT US</a></li>
+    <li><a href="page9.html" class="active">CONTACT US</a></li>
+  </ul>
+  <div class="right-section">
+    <div class="search-box">
+      <i class="fa fa-search"></i>
+      <input type="text" placeholder="Search Product..."/>
     </div>
+    <i class="fa-regular fa-user icon-btn"></i>
+    <a href="pg5.html" class="icon-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span class="cart-badge" id="cartBadge">0</span>
+    </a>
+  </div>
+</nav>
 
-    <div class="header-center">
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT US</a>
-      <a href="#">NEW LAUNCHES</a>
-      <a href="#">SALE</a>
+<section class="contact-hero">
+  <div class="contact-hero-content">
+    <h1>Contact <span>Us</span></h1>
+    <p>We'd love to hear from you. Our team is always ready to help.</p>
+  </div>
+</section>
+
+<div class="contact-layout">
+  <!-- FORM -->
+  <div class="contact-form-card">
+    <h3>Send Us a Message</h3>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="contactName">Full Name</label>
+        <input type="text" id="contactName" placeholder="Your full name"/>
+      </div>
+      <div class="form-group">
+        <label for="contactEmail">Email Address</label>
+        <input type="email" id="contactEmail" placeholder="your@email.com"/>
+      </div>
+      <div class="form-group">
+        <label for="contactSubject">Subject</label>
+        <input type="text" id="contactSubject" placeholder="What is this regarding?"/>
+      </div>
+      <div class="form-group">
+        <label for="contactMessage">Your Message</label>
+        <textarea id="contactMessage" placeholder="Write your message here (min. 20 characters)..."></textarea>
+      </div>
+      <button type="submit" class="submit-btn">
+        <i class="fa-solid fa-paper-plane"></i> Send Message
+      </button>
+    </form>
+  </div>
+
+  <!-- INFO CARDS -->
+  <div class="contact-info-col">
+    <div class="info-card">
+      <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+      <div class="info-text">
+        <h4>Email Us</h4>
+        <p>support@darimooch.com<br/>We reply within 24 hours</p>
+      </div>
     </div>
-
-    <div class="header-right">
-      <div class="search-bar">
-        <input type="text" placeholder="Search Product">
-        <span class="icon">🔍</span>
+    <div class="info-card">
+      <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+      <div class="info-text">
+        <h4>Call Us</h4>
+        <p>+92 300 1234567<br/>Mon–Sat, 9AM–6PM PKT</p>
       </div>
-      <span class="icon">👤</span>
-      <span class="icon">🛒</span>
     </div>
-  </nav>
-    <!-- Contact Form -->
-    <section class="form-section">
-      <h2 class="section-title">Send Us a Message</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <input type="text" placeholder="Subject" required />
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-
-    <!-- Contact Methods -->
-    <section class="info-section">
-      <h2 class="section-title">Other Ways to Reach Us</h2>
-      <div class="info-grid">
-        <div class="info-box">
-          <h3>Email</h3>
-          <p>help@darimooch.pk.com</p>
-        </div>
-        <div class="info-box">
-          <h3>Phone</h3>
-          <p>+92-3XX-XXXXXXX</p>
-        </div>
-        <div class="info-box">
-          <h3>Address</h3>
-          <p>Office #12, Block B, Lahore, Pakistan</p>
-        </div>
-        <div class="info-box">
-          <h3>Live Chat</h3>
-          <p>Available 9am–6pm (Mon–Sat)</p>
-        </div>
+    <div class="info-card">
+      <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+      <div class="info-text">
+        <h4>Our Office</h4>
+        <p>Office #12, Block B<br/>Clifton, Karachi, Pakistan</p>
       </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section">
-      <h2 class="section-title">Frequently Asked Questions</h2>
-      <div class="faq-box">
-        <details>
-          <summary>How long does delivery take?</summary>
-          <p>Orders typically arrive within 3–5 business days.</p>
-        </details>
-        <details>
-          <summary>Can I return a product?</summary>
-          <p>Yes, within 14 days of purchase. Please keep the receipt and packaging.</p>
-        </details>
-        <details>
-          <summary>Do you ship internationally?</summary>
-          <p>Currently, we only ship within Pakistan.</p>
-        </details>
-        <details>
-          <summary>Is live chat available on weekends?</summary>
-          <p>Live chat is available Monday to Saturday, 9am to 6pm.</p>
-        </details>
+    </div>
+    <div class="info-card">
+      <div class="info-icon"><i class="fa-solid fa-comments"></i></div>
+      <div class="info-text">
+        <h4>Live Chat</h4>
+        <p>Available on our website<br/>Average response: 5 mins</p>
       </div>
-    </section>
-  </main>
-  <footer>
-    <footer class="dm-footer">
-  <div class="dm-footer-container">
-</footer>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <h3>Frequently Asked <span>Questions</span></h3>
+
+  <div class="faq-item">
+    <button class="faq-question">How long does delivery take? <i class="fa-solid fa-chevron-down"></i></button>
+    <div class="faq-answer"><p>Standard delivery takes 3–5 business days across major cities in Pakistan. Remote areas may take 5–7 days.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">Can I return a product? <i class="fa-solid fa-chevron-down"></i></button>
+    <div class="faq-answer"><p>Yes! We offer a 14-day hassle-free return policy. Contact our support team with your order details to initiate a return.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">Do you ship internationally? <i class="fa-solid fa-chevron-down"></i></button>
+    <div class="faq-answer"><p>Currently we ship within Pakistan only. International shipping is planned for launch in 2026.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">Are your products safe for sensitive skin? <i class="fa-solid fa-chevron-down"></i></button>
+    <div class="faq-answer"><p>All our products are dermatologically tested and made with 100% natural ingredients. They are safe for all skin types.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">How do I use the promo code? <i class="fa-solid fa-chevron-down"></i></button>
+    <div class="faq-answer"><p>Enter the code <strong>DARIMOOCH30</strong> in the promo field on the cart page to get 30% off your order.</p></div>
+  </div>
+</section>
+
 <footer class="dm-footer">
   <div class="dm-footer-container">
-
-    <!-- Column 1 — Logo -->
     <div class="dm-footer-col">
-      <h3 class="dm-brand-title">DariMooch</h3>
-
-      <img src="images/image4.png" 
-           alt="DariMooch Logo" class="dm-logo">
-
-      <p class="dm-footer-text">
-        Premium Beard Grooming Essentials for Modern Men.
-      </p>
+      <div class="dm-brand-title">DARI <span>MOOCH</span></div>
+      <img src="images/image4.png" alt="Dari Mooch Logo" style="height: 48px; width: 48px; border-radius: 50%; margin-bottom: 12px; border: 2px solid var(--accent-color); background: #fff; padding: 3px;"/>
+      <p class="dm-footer-text">Premium Beard Grooming Essentials for Modern Men.</p>
+      <div class="dm-ai-disclaimer">Disclaimer: Images on this website are AI-generated for educational/demonstrative purposes. Generated using Gemini.</div>
     </div>
-
-    <!-- Column 2 — Quick Links -->
     <div class="dm-footer-col">
-      <h3 class="dm-footer-heading">Quick Links</h3>
+      <div class="dm-footer-heading">Quick Links</div>
       <ul class="dm-footer-list">
-        <li><a href="#">About</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Returns</a></li>
+        <li><a href="pg1.html">Home</a></li>
+        <li><a href="pg3.html">Shop Products</a></li>
+        <li><a href="unique_feature.html">Recommended</a></li>
+        <li><a href="page8.html">About Us</a></li>
+        <li><a href="page9.html">Contact Us</a></li>
       </ul>
     </div>
-
-    <!-- Column 3 — Contact Info -->
     <div class="dm-footer-col">
-      <h3 class="dm-footer-heading">Contact Us</h3>
-      <p class="dm-footer-text">Email: support@darimoch.com</p>
-      <p class="dm-footer-text">Phone: ‪+92 300 1234567‬</p>
-      <p class="dm-footer-text">Karachi, Pakistan</p>
+      <div class="dm-footer-heading">Contact</div>
+      <ul class="dm-footer-list">
+        <li><a href="mailto:support@darimooch.com"><i class="fa-solid fa-envelope"></i> support@darimooch.com</a></li>
+        <li><a href="tel:+923001234567"><i class="fa-solid fa-phone"></i> +92 300 1234567</a></li>
+        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</a></li>
+      </ul>
     </div>
-
-    <!-- Column 4 — Follow Us -->
     <div class="dm-footer-col">
-      <h3 class="dm-footer-heading">Follow Us</h3>
+      <div class="dm-footer-heading">Follow Us</div>
       <div class="dm-social-icons">
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
       </div>
     </div>
-
   </div>
-
-  <div class="dm-footer-bottom">
-    <p>© 2025 DariMooch. All Rights Reserved.</p>
-  </div>
+  <div class="dm-footer-bottom">© 2025 DariMooch. All Rights Reserved.</div>
 </footer>
+
+<script src="js/shared.js"></script>
+<script src="js/page9.js"></script>
 </body>
 </html>
-
-  
-

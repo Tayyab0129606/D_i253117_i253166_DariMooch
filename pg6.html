@@ -1,33 +1,115 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="pg6.css"> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
-<link rel="stylesheet" href="styles.css"> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
-<title>Dari Mooch</title> 
-</head> 
-<body> 
-<header class="navbar"> 
-<div class="logo"> 
-<img src="images/image4.png" alt="Dari Mooch Logo"> 
-<h1>DARI MOOCH</h1> 
-</div> 
-<nav class="nav-links"> 
-<a href="#">HOME</a> 
-<a href="#">ABOUT US</a> 
-<a href="#">NEW LAUNCHES</a> 
-<a href="#">SALE</a> 
-</nav> 
-<div class="right-section"> 
-<div class="search-box"> 
-<i class="fa fa-search"></i> 
-<input type="text" placeholder="Search Product"> 
-</div> 
-<i class="fa-regular fa-user icon"></i> 
-<i class="fa-solid fa-bag-shopping icon"></i> 
-</div> 
-</header> 
-</body> 
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dari Mooch — Sign Up & Register</title>
+  <link rel="stylesheet" href="css/shared.css"/>
+  <link rel="stylesheet" href="css/pg6.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+<nav class="navbar">
+  <a href="pg1.html" class="logo">
+    <img src="images/image4.png" alt="Dari Mooch Logo"/>
+    <h1>DARI <span>MOOCH</span></h1>
+  </a>
+  <ul class="nav-links">
+    <li><a href="pg1.html" id="nav-home">HOME</a></li>
+    <li><a href="pg3.html" id="nav-shop">SHOP</a></li>
+    <li><a href="unique_feature.html" id="nav-quiz">RECOMMENDED</a></li>
+    <li><a href="page8.html" id="nav-about">ABOUT US</a></li>
+    <li><a href="page9.html" id="nav-contact">CONTACT US</a></li>
+  </ul>
+  <div class="right-section">
+    <div class="search-box">
+      <i class="fa fa-search"></i>
+      <input type="text" placeholder="Search Product..."/>
+    </div>
+    <i class="fa-regular fa-user icon-btn"></i>
+    <a href="pg5.html" class="icon-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span class="cart-badge" id="cartBadge">0</span>
+    </a>
+  </div>
+</nav>
+
+<section class="signup-section">
+  <div class="signup-box">
+    <h2>CREATE ACCOUNT</h2>
+    <p class="subtitle">Join the Dari Mooch Grooming Club today</p>
+
+    <form id="signupForm">
+      <div class="input-group">
+        <label for="signupName">Full Name</label>
+        <input type="text" id="signupName" placeholder="Enter your full name"/>
+      </div>
+      <div class="input-group">
+        <label for="signupEmail">Email Address</label>
+        <input type="email" id="signupEmail" placeholder="your@email.com"/>
+      </div>
+      <div class="input-group">
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword" placeholder="Min. 6 characters"/>
+      </div>
+      <div class="input-group">
+        <label for="signupConfirmPassword">Confirm Password</label>
+        <input type="password" id="signupConfirmPassword" placeholder="Re-enter password"/>
+      </div>
+
+      <div class="terms-checkbox">
+        <input type="checkbox" id="signupTerms"/>
+        <label for="signupTerms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+      </div>
+
+      <button type="submit" class="signup-btn">Create Account →</button>
+    </form>
+
+    <div class="login-redirect">
+      Already have an account? <a href="pg2.html">Sign In here</a>
+    </div>
+  </div>
+</section>
+
+<footer class="dm-footer">
+  <div class="dm-footer-container">
+    <div class="dm-footer-col">
+      <div class="dm-brand-title">DARI <span>MOOCH</span></div>
+      <img src="images/image4.png" alt="Dari Mooch Logo" style="height: 48px; width: 48px; border-radius: 50%; margin-bottom: 12px; border: 2px solid var(--accent-color); background: #fff; padding: 3px;"/>
+      <p class="dm-footer-text">Premium Beard Grooming Essentials for Modern Men.</p>
+      <div class="dm-ai-disclaimer">Disclaimer: Images on this website are AI-generated for educational/demonstrative purposes. Generated using Gemini.</div>
+    </div>
+    <div class="dm-footer-col">
+      <div class="dm-footer-heading">Quick Links</div>
+      <ul class="dm-footer-list">
+        <li><a href="pg1.html">Home</a></li>
+        <li><a href="pg3.html">Shop Products</a></li>
+        <li><a href="unique_feature.html">Recommended</a></li>
+        <li><a href="page8.html">About Us</a></li>
+        <li><a href="page9.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="dm-footer-col">
+      <div class="dm-footer-heading">Contact</div>
+      <ul class="dm-footer-list">
+        <li><a href="mailto:support@darimooch.com"><i class="fa-solid fa-envelope"></i> support@darimooch.com</a></li>
+        <li><a href="tel:+923001234567"><i class="fa-solid fa-phone"></i> +92 300 1234567</a></li>
+        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</a></li>
+      </ul>
+    </div>
+    <div class="dm-footer-col">
+      <div class="dm-footer-heading">Follow Us</div>
+      <div class="dm-social-icons">
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="dm-footer-bottom">© 2025 DariMooch. All Rights Reserved.</div>
+</footer>
+
+<script src="js/shared.js"></script>
+<script src="js/pg6.js"></script>
+</body>
 </html>

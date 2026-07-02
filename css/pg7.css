@@ -1,0 +1,201 @@
+/* ORDER CONFIRMATION PAGE */
+@keyframes scaleUp {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(46,125,50,0.4); }
+  50% { box-shadow: 0 0 0 16px rgba(46,125,50,0); }
+}
+
+.success-container {
+  max-width: 800px;
+  margin: 60px auto 80px;
+  padding: 0 24px;
+}
+
+.success-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 50px 44px;
+  text-align: center;
+  border: 1px solid #e8e4df;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+  animation: fadeInUp 0.6s ease both;
+}
+
+.success-icon {
+  font-size: 72px;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  animation: scaleUp 0.5s ease-out, pulse 2s ease-in-out 0.5s infinite;
+  display: inline-block;
+}
+
+.success-card h2 {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.order-msg {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 34px;
+  line-height: 1.7;
+}
+
+/* TIMELINE */
+.timeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 36px 0;
+  position: relative;
+  padding: 0 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  right: 40px;
+  height: 3px;
+  background: #e8e4df;
+  z-index: 0;
+}
+
+.timeline-progress {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+  transition: width 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 1;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.step-icon {
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  border: 3px solid #e8e4df;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #bbb;
+  transition: all 0.5s ease;
+}
+
+.step.completed .step-icon {
+  border-color: var(--secondary-color);
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.step.active .step-icon {
+  border-color: var(--accent-color);
+  background: var(--accent-color);
+  color: #fff;
+  box-shadow: 0 0 0 6px rgba(184,138,90,0.2);
+}
+
+.step-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #bbb;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.step.completed .step-label,
+.step.active .step-label { color: var(--text-dark); }
+
+/* ORDER DETAILS */
+.order-details-box {
+  background: var(--bg-light);
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #e8e4df;
+  margin-top: 24px;
+  text-align: left;
+}
+
+.order-details-box h4 {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 1px solid #f0ebe4;
+}
+
+.detail-row:last-child { border-bottom: none; }
+.detail-row span:first-child { color: var(--text-muted); }
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 2px dashed #ddd;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.total-row span:last-child { color: var(--accent-color); }
+
+.continue-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 14px 38px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: var(--font-primary);
+  transition: var(--transition);
+  letter-spacing: 0.5px;
+}
+
+.continue-btn:hover {
+  background: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(184,138,90,0.4);
+}
