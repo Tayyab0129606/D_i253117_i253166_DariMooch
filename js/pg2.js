@@ -54,6 +54,6 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Login successful! Session initialized:", userSession); // Console Log 3
         
         // Redirect to index page
-        window.location.href = "pg1.html";
+        window.location.href = "index.html";
     });
 });
